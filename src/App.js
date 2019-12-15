@@ -2,14 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { PulseDot, PulseCircle, PulseRing } from "@ott_test/pulse-dot";
-import LocationField from "@ott_test/location-field";
+import { PulseDot, PulseCircle, PulseRing } from "@opentripplanner/pulse-dot";
+import LocationField from "@opentripplanner/location-field";
 
 const currentPosition = {
   coords: { latitude: 45.508246, longitude: -122.711574 }
 };
 const geocoderConfig = {
-  baseUrl: "https://ws-st.trimet.org/pelias/v1", // TriMet-specific default
+  baseUrl: "https://newplanner.trimet.org/ws/solrwrap/v0/pelias", // TriMet-specific default
   boundary: {
     // TriMet-specific default
     rect: {
