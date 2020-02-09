@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@opentripplanner/itinerary-body": "^0.0.3",
     "@opentripplanner/location-field": "^0.0.2",
     "@opentripplanner/pulse-dot": "^0.0.2",
     "@testing-library/jest-dom": "^4.2.4",

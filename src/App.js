@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { PulseDot, PulseCircle, PulseRing } from "@opentripplanner/pulse-dot";
 import LocationField from "@opentripplanner/location-field";
+import ItineraryBody from "@opentripplanner/itinerary-body";
 
 const currentPosition = {
   coords: { latitude: 45.508246, longitude: -122.711574 }
@@ -24,17 +24,33 @@ const geocoderConfig = {
 };
 const onLocationSelected = (m) => console.log(m);
 
+function trip() {
+  let retVal = null;
+
+  // eg: https://maps.trimet.org/gtfs/rt/vehicles/routes/100
+  const pdx_zoo="https://maps.trimet.org/otp_mod/plan?fromPlace=PDX%3A%3A45.5892%2C-122.5934&toPlace=Zoo%3A%3A45.510%2C-122.7158";
+  fetch(pdx_zoo)
+  .then(res => {
+    retVal = res.json();
+    // retVal;
+    console.log(retVal);
+  })
+
+  retVal = (
+    <PulseDot>
+      <PulseCircle></PulseCircle>
+      <PulseRing></PulseRing>
+    </PulseDot>
+  );
+
+  return retVal;
+}
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-      <PulseDot>
-        <PulseCircle></PulseCircle>
-        <PulseRing></PulseRing>
-      </PulseDot>
-
-      <br/><br/>
 
       <LocationField
         currentPosition={currentPosition}
@@ -43,8 +59,7 @@ function App() {
         locationType="from"
         onLocationSelected={onLocationSelected}
       />
-
-
+      {trip()}
       </header>
     </div>
   );
