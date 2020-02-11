@@ -1216,6 +1216,20 @@
     prop-types "^15.7.2"
     qs "^6.9.1"
 
+"@opentripplanner/core-utils@0.0.14-dev":
+  version "0.0.14-dev"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/core-utils/-/core-utils-0.0.14-dev.tgz#249c70c5062cc562d6c28acd214f0d2aae7bfa90"
+  integrity sha512-NQFIo7pC4MM02PMBDv6IJYD/tiYSxtWIkezp8XX39oHnRnwTaTgfDlUfknmjPxrum8GrrAlvpRaza/MzyHsJFw==
+  dependencies:
+    "@mapbox/polyline" "^1.1.0"
+    "@turf/along" "^6.0.1"
+    bowser "^2.7.0"
+    lodash.isequal "^4.5.0"
+    moment "^2.24.0"
+    moment-timezone "^0.5.27"
+    prop-types "^15.7.2"
+    qs "^6.9.1"
+
 "@opentripplanner/core-utils@^0.0.14":
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/@opentripplanner/core-utils/-/core-utils-0.0.14.tgz#9e58e78227759ab5c13e1dad22467c474bd102b7"
@@ -1238,13 +1252,13 @@
     "@opentripplanner/core-utils" "^0.0.14"
     prop-types "^15.7.2"
 
-"@ott_test/transit-vehicle-overlay@0.0.14-dev5":
-  version "0.0.14-dev5"
-  resolved "https://registry.yarnpkg.com/@ott_test/transit-vehicle-overlay/-/transit-vehicle-overlay-0.0.14-dev5.tgz#423d836c738be23b7ae53e5525f93449085cbf8b"
-  integrity sha512-uZhMeNEDf6MlkNhXZUzrifeGiGbXLWCZkmVfp+pREP3OLNlWmR9MNtHpWJT+2wSz8EDtzfLkcBVeJkH5BY/G4Q==
+"@ott_test/transit-vehicle-overlay@0.0.14-dev8":
+  version "0.0.14-dev8"
+  resolved "https://registry.yarnpkg.com/@ott_test/transit-vehicle-overlay/-/transit-vehicle-overlay-0.0.14-dev8.tgz#935ecdfaf5e6de9cf183894f0105d2de8e0a6b7b"
+  integrity sha512-btleit0+paaWu2heK3aNJUbhRLuzptL9hoKCDkmYFmSQWtsQgO3f1LWkOl8LYkv96HMsh8JE1jAaEzUt8RN4UA==
   dependencies:
     "@opentripplanner/base-map" "0.0.13-dev"
-    "@opentripplanner/core-utils" "0.0.13-dev"
+    "@opentripplanner/core-utils" "0.0.14-dev"
     "@opentripplanner/icons" "^0.0.14"
     "@turf/nearest-point-on-line" "^6.0.1"
     isomorphic-fetch "^2.2.1"

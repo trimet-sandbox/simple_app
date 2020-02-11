@@ -35,12 +35,18 @@ const onLocationSelected = (m) => console.log(m);
 
 */
 
+const geometryUrl = "https://newplanner.trimet.org/ws/ti/v0/index";
+const vehicleUrl = "https://maps.trimet.org/gtfs/rt/vehicles/";
+
+
 function vehicles(id="2020", routes="routes/all", panX=0, panY=0, color="#ec8284", follow=true, popup=true, tool=true) {
   const portland = [45.523, -122.671];
   return (
     <BaseMap center={portland}>
       <Vehicles
         name="Real-Time Buses and Trains"
+        geometryUrl={geometryUrl}
+        vehicleUrl={vehicleUrl}
         tracked={id}
         vehicleQuery={routes}
         panOffsetX={panX}
