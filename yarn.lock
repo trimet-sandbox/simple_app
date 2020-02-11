@@ -1252,10 +1252,10 @@
     "@opentripplanner/core-utils" "^0.0.14"
     prop-types "^15.7.2"
 
-"@ott_test/transit-vehicle-overlay@0.0.14-dev8":
-  version "0.0.14-dev8"
-  resolved "https://registry.yarnpkg.com/@ott_test/transit-vehicle-overlay/-/transit-vehicle-overlay-0.0.14-dev8.tgz#935ecdfaf5e6de9cf183894f0105d2de8e0a6b7b"
-  integrity sha512-btleit0+paaWu2heK3aNJUbhRLuzptL9hoKCDkmYFmSQWtsQgO3f1LWkOl8LYkv96HMsh8JE1jAaEzUt8RN4UA==
+"@ott_test/transit-vehicle-overlay@0.0.14-dev9":
+  version "0.0.14-dev9"
+  resolved "https://registry.yarnpkg.com/@ott_test/transit-vehicle-overlay/-/transit-vehicle-overlay-0.0.14-dev9.tgz#6cb99f542af37c9caa8e8279eaa3d3770af7598e"
+  integrity sha512-PjVSr14JhuEafWYc2DkttEvrAaIT9f49/b47OcJekkC9IChtB9+XCCbpAE2U/rmivQ6fL3YP60vM0b9vrAd4ig==
   dependencies:
     "@opentripplanner/base-map" "0.0.13-dev"
     "@opentripplanner/core-utils" "0.0.14-dev"
